@@ -1,0 +1,13 @@
+1 
+    #must be xxx.default to be installed , then can be load 
+    LOCAL_MODULE := master.spark.default
+
+2
+    ./device/qcom/common/base.mk
+
+    SPARK :=master.spark.default
+    PRODUCT_PACKAGES += $(SPARK)
+    
+    then will be compiled and install automatically.
+
+
